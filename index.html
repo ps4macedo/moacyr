@@ -1,0 +1,103 @@
+﻿<html manifest="willie.manifest">
+  <style>
+    body{color: white; background-image:url(img.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
+    input{width:25px;height:25px;background-color: transparent;}
+        button {
+                    background-color: white;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    text-align: center;
+        }
+        button:hover {
+                    box-shadow: 0 5px 50px 0 white;
+                    color: white;
+                    border-radius: 10px;
+        }</style>
+<head>
+<meta charset="utf-8">
+<title>PS4 Exploit by Willie Caolho</title>
+<link rel="stylesheet prefetch" href="Style.css">
+    <script>
+        document.cookie = 'kex=1';
+    </script>
+<script>
+function DLProgress(e){
+	parent.ScrOverlay.style.display="block";
+	Percent=(Math.round(e.loaded / e.total * 100));
+	parent.cacheUPDtxt.innerHTML="Instalando cache offline: " + Percent + "%";
+	parent.CacheBar.style.width=Percent + '%';
+}
+function DisplayCacheProgress(){
+	setTimeout(function(){parent.cacheUPDtxt.innerHTML="Cache Instalado com sucesso.Desligue a internet e reabra o navegador!!";},1000);}
+	window.applicationCache.addEventListener("progress",DLProgress,false);
+	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="Erro na instalação do Cache";
+};
+</script>
+
+</head>
+<body class="bg-darker">
+<div id="container"  style="">
+<div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
+<div id=CacheProgress><div id=CacheBar></div></div></div>
+<center><img src="logo.png" width=750 height=225></center>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<hr>
+<div id="myModal" class="modal">
+  <!-- MODAL CONTENTS -->
+  <div class="modal-content">
+  <span class="close"></span>
+    <div class="modal-body">
+
+    <br><br><br>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<h1 id=msgs2 style='font-size:25px;text-align:center;color: yellow;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PS4 Exploit 9.00 by Willie Caolho</h1>
+<hr>
+<div style="text-align:center" id="MyItems">
+    <br><br><br>
+    <div style=font-size:20px;color:yellow;></div>
+    <a href="goldhen2.0b2/goldhen2.0b2.html"><button style='font-size:20px;text-align:center;color:white;background-color: goldenrod;' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GoldHEN 2.0b2 by SISTRo'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B>GoldHEN 2.0b2</B></button></a>
+   <br><br>
+    <div style=font-size:30px;text-align:center;color:yellow;>PAYLOADS</div>
+<h1></h1>
+    <a href="binloader/binloader.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carrega um arquivo bin enviado para o endereço IP PS4 na porta 9020'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> Bin Loader </B></button></a>
+    <a href="ftp/ftp.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Servidor FTP para acesso remoto ao PS4'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> FTP </B></button></a>
+    <a href="dumper/dumper.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faça backup de jogos em uma unidade USB para poder criar arquivos fpkg'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> App Dumper </B></button></a>
+    <a href="kclock/kclock.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Muda o relogio do PS4'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> Kernel Clock </B></button></a>
+    <br><br>
+    <a href="backup/backup.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crie um backup de arquivos de banco de dados importantes e dados do usuário'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> DB Backup </B></button></a>
+    <a href="restore/restore.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restaure um backup dos arquivos de banco de dados e dados do usuário'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> DB Restore </B></button></a>
+    <a href="hblocker/hblocker.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desative a abertura automática da última página usada no navegador da Web PS4'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> History Blocker </B></button></a>
+    <a href="dupdates/dupdates.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cria arquivos fictícios na pasta de atualização do PS4'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B>Disable Update</B></button></a>
+    <a href="eupdates/eupdates.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove os arquivos fictícios na pasta de atualização do PS4'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> Enable Update </B></button></a>
+    <a href="ebrowser/ebrowser.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Habilita o navegador'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> Enable Browser </B></button></a>
+    <br><br>
+    <a href="app2usb/app2usb.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mover jogos instalados para HD externo'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> App2USB </B></button></a>
+    <a href="todex/todex.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desbloqueia alguns recursos de depuração disponíveis no testkit'" ; onmouseout="msgs2.innerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguardando...'" type="button"><B> ToDex </B></button></a>
+    <br><br>
+
+    <br><br><br>
+	
+
+    </body>
+    </html>
